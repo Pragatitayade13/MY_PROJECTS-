@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(250, 206, 109);
+
+}
+h1{
+    font-style: normal;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+}
+h2{
+    color: darkblue;
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+button{
+    border-color: rgb(10, 10, 10);
+    opacity: 0.8;
+    color:black;
+    background-color: rgb(246, 8, 8);
+    width: 100px;
+}
+
