@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+   body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .nav_container {
+        background-color: none;
+       
+        padding: 20px;
+        text-align: center;
+    }
+
+    h2 {
+        margin: 0;
+        color: rgb(247, 38, 38);
+        padding: 10px;
+        font-size: 36px; /* Change the font size to your preferred size */
+        font-family: spantaran; /* Change the font family to your preferred style */
+    }
+
+    .blood-donation {
+       
+        border-radius: 5px;
+    }
+
+    .container1 {
+        margin: 20px auto;
+        max-width: 600px;
+        border: 1px solid #ccc;
+        box-shadow: 8px 10px 10px 10px rgba(42, 26, 26, 0.4);
+        border-radius: 10px;
+        padding: 20px;
+        
+    }
+
+        .container1_form {
+            margin: 10px 0;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="Date"], select {
+            width: 550px;
+            padding: 10px;
+            margin: 5px 0;
+        
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #a11f09;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0.8;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #074888;
+        }
+    
+    </style>
+    <title>Blood Bank</title>
+</head>
+<body>
+    
+    <div class="nav_container">
+    <h2><span class="blood-donation">Blood Donation</span></h2>
+    <body background="C:\Users\praga\OneDrive\Pictures\Screenshots\Screenshot 2025-07-04 170351.png"></body>
+
+    </div>
+
+    <div class="container1">
+        <form action="greet.html" method="get">
+            <!-- Your form content here -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="donor">Donor Name</label>
+                    <input type="text" class="form-control" id="donorName" name="donor" placeholder="Donor Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="mobile">Mobile</label>
+                    <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" class="form-control" id="age" name="age" placeholder="Age" required>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" name="city" placeholder="City" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="date">Date</label>
+                    <input type="Date" class="form-control" id="date" name="date" required>  
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="bloodGroup">Blood Group</label>
+                    <select id="bloodGroup" name="bloodgroup" class="form-control">
+                        <option selected>Select Blood Group</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="O">O</option>
+                        <option value="AB">AB</option>
+                        <option value="A-">A-</option>
+                        <option value="B-">B-</option>
+                        <option value="O-">O-</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="gender">Gender</label>
+                    <select id="sex" name="gender" class="form-control">
+                        <option selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>    
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        
+        </form>
+        </form>
+    </div>
+</body>
+</html>

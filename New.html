@@ -1,0 +1,72 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blood Bank Login</title>
+  <link rel="stylesheet" href="New.css">
+       <body>
+       
+        
+        <body background="C:\Users\praga\OneDrive\Pictures\Screenshots\Screenshot 2025-07-04 170351.png"></body>
+        <div class="wrapper">
+        <h1 class="form-title">Registration Form</h1>
+        <div class="login-container">
+          
+          <h2>Login</h2>
+          <form id="myform">
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter valid username" required><br>
+      
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter valid password" required><br>
+      
+            <div class="options">
+              <input type="checkbox" id="remember">
+              <label for="remember">Remember me</label>
+            </div>
+      
+            <p class="terms">By creating this account I agree to your <a href="#">Terms & privacy</a>.</p>
+            <div style="display: flex; justify-content: center; gap: 60px;">
+              
+            <button type="submit" onclick="validateForm()">SIGN IN</button>
+            <button type="Cancel" onclick="cancel()">Cancel</button>
+                </div>
+            <p class="signup">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <main>
+        </form>
+          
+        
+        <script>
+          function cancel()
+          {
+              alert("Cancel");
+          }
+          function validateForm(){
+            var user = document.getElementById("username").value;
+            var pass =document.getElementById("password").value;
+            if(user===" " || pass=== " ")
+          {
+            alert("Username and password cannet be empty.");
+            return false;
+          }
+         if(user==="admin"&& pass=== "1234")
+          {
+            alert("login successfull");
+            return true;
+          }
+          else{
+            alert("Invalid username or password..");
+            return false;
+          }
+        }
+        </script>
+        </div>
+      </div>
+     
+        </main>
+      
+      
+      </body>
+      </head></html>
+      
